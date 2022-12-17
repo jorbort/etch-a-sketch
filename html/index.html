@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etch a sketch</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="btncontainer">
+        <button id="black" onclick="changeColor('black')">black</button>
+        <button id="erasor" onclick="changeColor('white')">erasor</button>
+        <button id="random" onclick="changeColor('random')">random</button>
+        <button id="reset" onclick="reset()" >reset </button>
+    </div>
+    <div class="grid" id="grid" ></div>
+    <label for="size" > grid size <input id="size" value="16" type="number" onchange="changeSize(this.value)"></label>
+    <script src="/js/app.js"></script>
+</body>
+</html>
